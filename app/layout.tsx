@@ -23,7 +23,10 @@ export const metadata: Metadata = {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',
     apple: '/apple-touch-icon.png'
-  }
+  },
+  openGraph: {
+    images: '/og-image.png',
+  },
 }
 
 interface RootLayoutProps {
@@ -32,7 +35,7 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html suppressHydrationWarning>
       <head />
       <body
         className={cn(
